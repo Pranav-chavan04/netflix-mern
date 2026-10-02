@@ -12,10 +12,10 @@ const movieRoutes = require("./routes/movieRoutes");
 connectdb();
 
 app.use("/api/auth", authRoutes);
-
 app.use("/api/movies", movieRoutes);
 
+const PORT = process.env.PORT || 5000;
 
-app.listen(5000, () => {
-    console.log("server is connected to port 5000");
+app.listen(PORT, () => {
+    console.log(`server is connected to port ${PORT}`);
 });
