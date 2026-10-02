@@ -33,7 +33,7 @@ const Home = () => {
     fetchMovies();
   }, []);
 
-  // Filter movies by genre
+  
   const actionMovies = movies.filter((movie) =>
     movie.genre?.some(
       (genre) => genre.toLowerCase() === "action"

@@ -107,7 +107,7 @@ const MovieDetails = () => {
           }}
         />
 
-        {/* Dark overlays */}
+        
         <div className="absolute inset-0 bg-black/50" />
 
         <div className="absolute inset-0 bg-linear-to-r from-black via-black/70 to-transparent" />
