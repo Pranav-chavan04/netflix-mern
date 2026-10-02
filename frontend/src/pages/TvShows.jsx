@@ -11,7 +11,7 @@ const TvShows = () => {
     const fetchShows = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/movies"
+          "https://netflix-backend-597q.onrender.com/api/movies"
         );
 
         const movies = response.data.movies || [];

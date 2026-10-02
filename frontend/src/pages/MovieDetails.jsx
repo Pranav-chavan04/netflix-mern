@@ -21,7 +21,7 @@ const MovieDetails = () => {
         setLoading(true);
 
         const response = await axios.get(
-  `http://localhost:5000/api/movies/${id}`
+  `https://netflix-backend-597q.onrender.com/api/movies/${id}`
 );
 
         setMovie(response.data);
